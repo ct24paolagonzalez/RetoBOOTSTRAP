@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>ALESSTUDIO</title>
+</head>
+<body>
+    <nav class="navbar navbar bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="#">ALESSTUDIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">¿Qué estás buscando?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#">Paquetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+<main>
+   
+    <div class="modal fade" tabindex="-1" id="registro-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Regístrate</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">No compartiremos su correo electrónico.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cargar</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+   
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="img1.jpeg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="fs-4">Resguarda tus mejores momentos con</P>
+                <p class="display-1 fw-bolder text-capitalize">ALESSTUDIO</p>
+                <button class="btn btn-primary px-4 py-2 fs-5" mt-5 data-bs-toggle="modal" data-bs-target="#registro-modal"> Ser parte</button>
+              </div>
+        </div>
+          <div class="carousel-item c-item">
+            <img src="img2.jpeg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="fs-4">Sueña, sonríe y vive para siempre</P>
+                <p class="display-1 fw-bolder text-capitalize">PROMOCIONES ESPECIALES</p>
+    
+              </div>
+        </div>
+          <div class="carousel-item c-item">
+            <img src="img3.jpeg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="fs-4">Disfruta con tus personas especiales</P>
+                <p class="display-1 fw-bolder text-capitalize">MEMORIAS ÚNICAS</p>
+    
+              </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section class="overview">
+        <div class="container h-100 d-flex align-items-center">
+<div class="row w-100" text-center fs-4>
+    <div class="col-XL">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+            <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+          </svg>
+        FOTOS PLASTIFICADAS Y EN DIGITAL
+        </div>
+     <div class="col-XL">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-check" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
+            <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+          </svg>
+        15% DE DESCUENTO DURANTE LAS FIESTAS 
+     </div>
+     <div class="col-XL">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+            <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z"/>
+          </svg>
+        MAQUILLISTAS Y ESTILISTAS 
+     </div>
+</div>
+        </div>
+      </section>
+
+      <section id="Paquetes" class="pt-5">
+        <h2 class="text-center my-5">PAQUETES</h2>
+        <style>
+            .image-container {
+                margin: 20px;
+            }
+            .image-container img {
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+            .card-img-top {
+                width: 100%; /
+                margin: 5px auto; 
+                display: block;
+            }
+            .card {
+                margin: 10px; 
+            }
+        </style>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete básico</h5>
+                        <p class="card-text">Este paquete es ideal para sesiones individuales o en pareja. Incluye una sesión de 1 hora en estudio, con 10 fotos editadas en alta resolución y un cambio de vestuario. El maquillaje y estilismo no están incluidos.
+                            Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete estándar</h5>
+                        <p class="card-text">Perfecto para pequeñas familias o grupos de amigos. Incluye una sesión de 2 horas en estudio o locación exterior, con 20 fotos editadas en alta resolución y dos cambios de vestuario. Además, incluye servicio de maquillaje.
+                            Precio: $200</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete premium</h5>
+                        <p class="card-text">Ideal para eventos especiales como cumpleaños o aniversarios. Incluye una sesión de 3 horas en estudio y locación exterior, con 30 fotos editadas en alta resolución y tres cambios de vestuario. También incluye servicio de maquillaje y estilismo.
+                            Precio: $350</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="img8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete deluxe</h5>
+                        <p class="card-text">Perfecto para bodas o eventos grandes. Incluye una sesión de 5 horas en estudio y múltiples locaciones exteriores, con 50 fotos editadas en alta resolución y cinco cambios de vestuario. Además, incluye servicio de maquillaje y estilismo para hasta 5 personas.
+                            Precio: $600</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</main>
+<footer class="bg-light py-5 mt-5">
+    <div class="container text-dark text-center">
+        <p>© 2024, ALESSTUDIO</p>
+    </div>
+
+</footer>
+I
+
+
+
+</body>
+</html>
